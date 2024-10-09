@@ -61,3 +61,10 @@ class OrderDetail(generics.ListAPIView):
 class CustomerAddressViewSet(viewsets.ModelViewSet):
      queryset=models.CustomerAddress.objects.all()
      serializer_class=serializers.CustomerAddressSerializers
+
+
+
+#Product rating and reviews
+class  ProductRatingReviewsViewSet(viewsets.ModelViewSet):
+     queryset=models.ProductRatingReviews.objects.all()
+     serializer_class=serializers.ProductRatingReviewsSerializers
