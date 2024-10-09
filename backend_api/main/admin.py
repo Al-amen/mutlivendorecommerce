@@ -19,3 +19,4 @@ class OrderItemsAdmin(admin.ModelAdmin):
 admin.site.register(models.Customer, CustomerAdmin)
 admin.site.register(models.Order, OrderAdmin)
 admin.site.register(models.OrderItems,  OrderItemsAdmin)
+admin.site.register(models.CustomerAddress)

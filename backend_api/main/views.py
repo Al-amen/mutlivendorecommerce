@@ -55,6 +55,9 @@ class OrderDetail(generics.ListAPIView):
         order_items = models.OrderItems.objects.filter(order=order)
 
         return order_items
+      
 
-          
-          
+#customer address
+class CustomerAddressViewSet(viewsets.ModelViewSet):
+     queryset=models.CustomerAddress.objects.all()
+     serializer_class=serializers.CustomerAddressSerializers

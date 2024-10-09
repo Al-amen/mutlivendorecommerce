@@ -59,7 +59,7 @@ class OrderItems(models.Model):
     
 #Customer Address
 class CustomerAddress(models.Model):
-    cutomer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name="customer_address")
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name="customer_address")
     address = models.TextField()
     defualt_address = models.BooleanField(default=True)
 
